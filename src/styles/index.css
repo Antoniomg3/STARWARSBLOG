@@ -1,3 +1,55 @@
-/* 
-    General Styles
-*/
+.btn.btn-outline-dark{
+    color: #FFD000;
+    border-color:#FFD000;
+}
+
+.btn-warning {
+    background-color: #FFD000;
+    border-color: #FFD000;
+}
+
+h2, h5{
+    color: #FFD000;
+    font-family:'Righteous';
+}
+
+h5{
+    color: #6b6960;
+}
+
+.vr{
+    padding: 0px;
+}
+
+.card{
+    margin: auto;
+    max-width: 1250px;
+}
+
+.scrolling{
+    overflow-x: auto;
+    border-radius: 0.25rem;
+    margin-bottom: 15px;
+}
+
+/* Tamaño scroll */
+.scrolling::-webkit-scrollbar {
+  width: 8px;
+}
+
+ /* Estilo barra scroll */
+.scrolling::-webkit-scrollbar-thumb {
+  background: #46453e;
+  border-radius: 4px;
+}
+ /* Estilo track de scroll */
+.scrolling::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+.scrolling::-webkit-scrollbar-track:hover, 
+.scrolling::-webkit-scrollbar-track:active {
+  background: #FFD000;
+  ;
+}

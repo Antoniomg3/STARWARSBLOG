@@ -1,16 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../img/logo.png";
+
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+		<nav className="navbar navbar-light bg-light mb-3 px-5">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+			<img src={logo} />
+				<span className="navbar-brand"></span>
 			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
+				<div className="btn-group mx-5 mt-2 mb-2">
+				<button type="button" className="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Favorites</button>
+				<ul className="dropdown-menu">
+					<li><a className="dropdown-item" href="#">Favorite</a></li>
+				</ul>
 			</div>
 		</nav>
 	);
