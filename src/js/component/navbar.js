@@ -22,7 +22,7 @@ export const Navbar = () => {
 				<button type="button" className="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Favorites</button>
 				<ul className="dropdown-menu">
 					{
-						favorites.map((item, index) => <li key={index}><a className="dropdown-item" href="#"><a>{item.name}</a></a></li>)
+						favorites.map((item, index) => <li key={index}><a className="dropdown-item" href="#"><Link>{item.name}</Link></a></li>)
 					}
 				</ul>
 			</div>
