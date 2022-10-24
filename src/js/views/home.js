@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/home.css";
 import imgCard from "../../img/img-card.webp";
+import {Context} from '../store/appContext'
 
 export const Home = () => {
   const [personajes, modificarPersonajes] = useState([]);
   const [planetas, modificarPlanetas] = useState([]);
   const [vehiculos, modificarVehiculos] = useState([]);
   const [cargando, modificarCargando] = useState(true);
+  const store = useContext(Context)
+
+  console.log(store)
 
   const obtenerPeronsas = async () => {
     const res = await fetch("https://www.swapi.tech/api/people/");
@@ -47,7 +51,7 @@ export const Home = () => {
 
   return (
     <div className="container-fluid px-5">
-      <h2>PEOPLES</h2>
+      <h2>PERSONAJES</h2>
       <div className="row scrolling flex-row flex-nowrap">
         {personajes.map((personaje) => {
           return (
@@ -61,11 +65,13 @@ export const Home = () => {
                     className="btn btn-outline-dark"
                     to={`/personaje/${personaje.uid}`}
                   >
-                    Learn more!
+                    Mas info!
                   </Link>
                   <button
 							    type="button"
-							    className="btn btn-outline-dark float-end">
+							    className="btn btn-outline-dark float-end"
+                  onClick={() => store.actions.addToFavorites(personaje)}
+                  >
                   <i className={"fas fa-heart"}/>
 						      </button>
                 </div>
@@ -75,7 +81,7 @@ export const Home = () => {
         })}
       </div>
 
-      <h2>PLANETS</h2>
+      <h2>PLANETAS</h2>
       <div className="row scrolling flex-row flex-nowrap">
         {planetas.map((planeta) => {
           return (
@@ -89,8 +95,15 @@ export const Home = () => {
                     className="btn btn-outline-dark"
                     to={`/planeta/${planeta.uid}`}
                   >
-                    Learn more!
+                    Mas info!
                   </Link>
+                  <button
+							    type="button"
+							    className="btn btn-outline-dark float-end"
+                  onClick={() => store.actions.addToFavorites(planeta)}
+                  >
+                  <i className={"fas fa-heart"}/>
+						      </button>
                 </div>
               </div>
             </div>
@@ -98,7 +111,7 @@ export const Home = () => {
         })}
       </div>
 
-      <h2>VEHICLES</h2>
+      <h2>VEHICULOS</h2>
       <div className="row scrolling flex-row flex-nowrap">
         {vehiculos.map((vehiculo) => {
           return (
@@ -112,8 +125,15 @@ export const Home = () => {
                     className="btn btn-outline-dark"
                     to={`/vehiculo/${vehiculo.uid}`}
                   >
-                    Learn more!
+                    Mas info!
                   </Link>
+                  <button
+							    type="button"
+							    className="btn btn-outline-dark float-end"
+                  onClick={() => store.actions.addToFavorites(vehiculo)}
+                  >
+                  <i className={"fas fa-heart"}/>
+						      </button>
                 </div>
               </div>
             </div>
