@@ -40,17 +40,17 @@ export const Personaje = (props) => {
             </div>
                 <div className="container text-center">
                     <div className="row">
-                    <div className="col"><h5>Height:</h5> {detalle.properties.height}</div>
+                    <div className="col"><h5>Altura:</h5> {detalle.properties.height}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Mass:</h5> {detalle.properties.mass}</div>
+                    <div className="col"><h5>Peso:</h5> {detalle.properties.mass}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Hair color:</h5> {detalle.properties.hair_color}</div>
+                    <div className="col"><h5>Color de Pelo:</h5> {detalle.properties.hair_color}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Skin color:</h5> {detalle.properties.skin_color}</div>
+                    <div className="col"><h5>Color de piel:</h5> {detalle.properties.skin_color}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Birth year:</h5> {detalle.properties.birth_year}</div>
+                    <div className="col"><h5>Año de Nacimiento:</h5> {detalle.properties.birth_year}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Gender:</h5> {detalle.properties.gender}</div>
+                    <div className="col"><h5>Genero:</h5> {detalle.properties.gender}</div>
                 </div>
             </div>
         </div>

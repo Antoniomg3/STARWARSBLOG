@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../styles/home.css";
 import imgCard from "../../img/img-card.webp";
 import {Context} from '../store/appContext'
+import { element } from "prop-types";
 
 export const Home = () => {
   const [personajes, modificarPersonajes] = useState([]);
@@ -57,7 +58,7 @@ export const Home = () => {
           return (
             <div className="col" key={personaje.uid}>
               <div className="card my-2" style={{ width: "18rem" }}>
-                <img src={imgCard} className="card-img-top" />
+                <img src={`https://starwars-visualguide.com/assets/img/characters/${personaje.uid}.jpg`} className="card-img-top" />
                 <div className="card-body">
                   <h5 className="card-title">{personaje.name}</h5>
                   <p className="card-text">{personaje.gender}</p>
@@ -87,7 +88,7 @@ export const Home = () => {
           return (
             <div className="col" key={planeta.uid}>
               <div className="card my-2" style={{ width: "18rem" }}>
-                <img src={imgCard} className="card-img-top" />
+                <img src={`https://starwars-visualguide.com/assets/img/planets/${planeta.uid}.jpg`} className="card-img-top" />
                 <div className="card-body">
                   <h5 className="card-title">{planeta.name}</h5>
                   <p className="card-text">{planeta.terrain}</p>
@@ -117,7 +118,7 @@ export const Home = () => {
           return (
             <div className="col" key={vehiculo.uid}>
               <div className="card my-2" style={{ width: "18rem" }}>
-                <img src={imgCard} className="card-img-top" />
+                <img src={`https://starwars-visualguide.com/assets/img/vehicles/${vehiculo.uid}.jpg`} className="card-img-top" />
                 <div className="card-body">
                   <h5 className="card-title">{vehiculo.name}</h5>
                   <p className="card-text">{vehiculo.model}</p>

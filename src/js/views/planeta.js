@@ -40,19 +40,19 @@ export const Planeta = (props) => {
                 </div>
                     <div className="container text-center">
                         <div className="row">
-                        <div className="col"><h5>Terrain:</h5> {detalle.properties.terrain}</div>
+                        <div className="col"><h5>Terreno:</h5> {detalle.properties.terrain}</div>
                         <div className="vr"></div>
-                        <div className="col"><h5>Diameter:</h5> {detalle.properties.diameter}</div>
+                        <div className="col"><h5>Diametro:</h5> {detalle.properties.diameter}</div>
                         <div className="vr"></div>
-                        <div className="col"><h5>Rotation period:</h5> {detalle.properties.rotation_period}</div>
+                        <div className="col"><h5>Periodo de Rotación:</h5> {detalle.properties.rotation_period}</div>
                         <div className="vr"></div>
-                        <div className="col"><h5>Orbital period:</h5> {detalle.properties.orbital_period}</div>
+                        <div className="col"><h5>Órbita:</h5> {detalle.properties.orbital_period}</div>
                         <div className="vr"></div>
-                        <div className="col"><h5>Gravity:</h5> {detalle.properties.gravity}</div>
+                        <div className="col"><h5>Gravedad:</h5> {detalle.properties.gravity}</div>
                         <div className="vr"></div>
-                        <div className="col"><h5>Climate:</h5> {detalle.properties.climate}</div>
+                        <div className="col"><h5>Clima:</h5> {detalle.properties.climate}</div>
                         <div className="vr"></div>
-                        <div className="col"><h5>Surface_water:</h5> {detalle.properties.surface_water}</div>
+                        <div className="col"><h5>Superficie Aquatica:</h5> {detalle.properties.surface_water}</div>
                     </div>
                 </div>
             </div>

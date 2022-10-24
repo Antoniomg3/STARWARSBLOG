@@ -40,21 +40,21 @@ export const Vehiculo = (props) => {
             </div>
                 <div className="container text-center">
                     <div className="row">
-                    <div className="col"><h5>Model:</h5> {detalle.properties.model}</div>
+                    <div className="col"><h5>Modelo:</h5> {detalle.properties.model}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Vehicle class:</h5> {detalle.properties.vehicle_class}</div>
+                    <div className="col"><h5>Tipo de Vehiculo:</h5> {detalle.properties.vehicle_class}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Manufacturer:</h5> {detalle.properties.manufacturer}</div>
+                    <div className="col"><h5>Fabricante:</h5> {detalle.properties.manufacturer}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Cost in credits:</h5> {detalle.properties.cost_in_credits}</div>
+                    <div className="col"><h5>Precio en creditos:</h5> {detalle.properties.cost_in_credits}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Length:</h5> {detalle.properties.length}</div>
+                    <div className="col"><h5>Largo:</h5> {detalle.properties.length}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Passengers:</h5> {detalle.properties.passengers}</div>
+                    <div className="col"><h5>Pasajeros:</h5> {detalle.properties.passengers}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Max atmosphering speed:</h5> {detalle.properties.max_atmosphering_speed}</div>
+                    <div className="col"><h5>Velocidad atmosférica máxima:</h5> {detalle.properties.max_atmosphering_speed}</div>
                     <div className="vr"></div>
-                    <div className="col"><h5>Cargo capacity:</h5> {detalle.properties.cargo_capacity}</div>
+                    <div className="col"><h5>Capacidad de carga:</h5> {detalle.properties.cargo_capacity}</div>
                 </div>
             </div>
         </div>
